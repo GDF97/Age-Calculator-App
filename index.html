@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator App | FrontEnd Mentor</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+</head>
+<body>
+
+  <main class="app">
+    <section class="inputSection">
+      <div class="inputGroup">
+        <div class="inputWrapper">
+          <label for="">Day</label>
+          <input type="number" name="" id="inputDay" class="inputBox" max="31" min="0" placeholder="DD">
+          <p class="advice" id="adviceDay">Must be a valid day</p>
+        </div>
+        <div class="inputWrapper">
+          <label for="">Month</label>
+          <input type="number" name="" id="inputMonth" class="inputBox" max="12" min="1" placeholder="MM">
+          <p class="advice" id="adviceMonth">Must be a valid Month</p>
+        </div>
+        <div class="inputWrapper">
+          <label for="">Year</label>
+          <input type="number" name="" id="inputYear" class="inputBox" placeholder="YYYY">
+          <p class="advice" id="adviceYear">Must be in the past</p>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <section class="statSection">
+      <div class="numberWrapper">
+        <p> <strong id="ageNumber">--</strong> years</p>
+        <p> <strong id="monthNumber">--</strong> months left</p>
+        <p> <strong id="daysNumber">--</strong> days left</p>
+      </div>
+      <button class="btnCalc"><i class='bx bx-calculator'></i></button>
+    </section>
+  </main>
+
+</body>
+</html>
